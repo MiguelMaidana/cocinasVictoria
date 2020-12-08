@@ -8,12 +8,12 @@ position : fixed;
 z-index :999;
 width: 350px;
 height : 100%;
-background : #ffc500;
+background : #3156F7;
 display : grid;
 align-items : center;
 top:0;
 transition : 0.3s ease-in-out;
-right : ${({isOpen})=>(isOpen ? '0' : '0')};
+right : ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
 
 @media screen and(max-width :400px){
     width : 100%;
@@ -60,7 +60,7 @@ color:#000;
 cursor : pointer;
 
 &:hover {
-    color:#e31837;
+    color:#31BFF7;
     transition : 0.2s ease-in-out;
 }
 `;
@@ -73,7 +73,7 @@ justify-content : center;
 
 export const SidebarRoute = styled(Link)`
 
-background : #e31837;
+background : #3884E0;
 white-space: nowrap;
 padding: 16px 64px;
 color:#fff;

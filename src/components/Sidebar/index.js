@@ -2,10 +2,10 @@ import React from 'react'
 import {SidebarContainer,Icon,CloseIcon,SidebarMenu,SidebarLink,
     SideBtnWrap,SidebarRoute}  from "./SidebarElements"
 
-const Sidebar = () => {
+const Sidebar = ({isOpen,toggle}) => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon/>
             </Icon>
             <SidebarMenu>
@@ -14,7 +14,7 @@ const Sidebar = () => {
                 <SidebarLink to="/">Nosotros</SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to="/">Comprar Ahoras</SidebarRoute>
+                <SidebarRoute to="/">Comprar Ahora</SidebarRoute>
             </SideBtnWrap>
         </SidebarContainer>
     )
